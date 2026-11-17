@@ -40,6 +40,16 @@ php artisan serve
 
 The app is served at http://127.0.0.1:8000.
 
+## Project Structure
+
+| Path | Purpose |
+| --- | --- |
+| `app/Models` | Eloquent models: `Booking`, `BookingDetail`, `Location`, `Product`, `VehicleDetail`, `VehicleOwner`, `User`, `Contact` |
+| `app/Http/Controllers` | Controllers for bookings, vehicles, owners, customers, locations, contact and profile; `Auth/` holds authentication |
+| `routes/web.php` | Web routes, including the `/{lang}/...` localized pages |
+| `database/migrations` | Schema for users, vehicles, owners, bookings, locations and permissions |
+| `resources/views` | Blade templates (welcome, booking form, vehicles, dashboard, profile, emails) |
+
 ## Testing
 
 ```bash
